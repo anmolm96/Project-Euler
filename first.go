@@ -1,3 +1,9 @@
+/*
+ * Name: Anmol Maini
+ * Date: 31st January, 2015
+ * Purpose: Find the sum of integers that are multiples of 3 and 5 under 1000.
+ * Result: 233168
+ */
 package main
 
 import "fmt"
