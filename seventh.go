@@ -1,8 +1,8 @@
 /*
  * Name: Anmol Maini
- * Date: 1st February, 2015
- * Purpose: Find largest prime factor of 600851475143
- * Result: 6857
+ * Date: 2nd February, 2015
+ * Purpose: Find 10001st prime number.
+ * Result: 104743
  */
  package main
 
@@ -30,14 +30,14 @@
  }
 
  func main() {
-   num, i, factor := 600851475143, 1, 0
-   for i*i < num {
-     if isPrime(i) {
-       if num%i == 0 {
-         factor = i
-       }
+   i, num := 0, 0
+
+   for a:= 0; i < 10001; a++ {
+     if isPrime(a) {
+       i++
+       num = a
+       //fmt.Println(i, a)
      }
-     i++
    }
-   fmt.Println(factor)
+   fmt.Println(num)
  }
